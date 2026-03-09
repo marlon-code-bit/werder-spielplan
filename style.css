@@ -309,7 +309,7 @@ body[class*="saison"] .bundesliga {
     justify-self: start;
 }
 
-.weserstadion-icon{
+.weserstadion-icon {
     width: 40px;
     height: 40px;
     object-fit: contain;
@@ -317,7 +317,7 @@ body[class*="saison"] .bundesliga {
     margin: 0;
 }
 
-.weserstadion-titel{
+.weserstadion-titel {
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -328,16 +328,16 @@ body[class*="saison"] .bundesliga {
     padding: 2px 8px;
 }
 
-.heimspiel .daten + .weserstadion-titel{
+.heimspiel .daten+.weserstadion-titel {
     margin-top: -10px;
 }
 
-.bundesliga-logo{
+.bundesliga-logo {
     width: 24px;
     margin: 0;
 }
 
-.bundesliga-titel{
+.bundesliga-titel {
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -348,11 +348,11 @@ body[class*="saison"] .bundesliga {
     padding: 2px 8px;
 }
 
-.heimspiel .daten + .bundesliga-titel{
+.heimspiel .daten+.bundesliga-titel {
     margin-top: -8px;
 }
 
-.heimspiel .weserstadion-titel + .bundesliga-titel{
+.heimspiel .weserstadion-titel+.bundesliga-titel {
     margin-top: 4px;
 }
 
@@ -461,8 +461,8 @@ body[class*="saison"] .bundesliga {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.goalkeeper-1 {
-    /*border: red solid solid 1px;*/
+.player {
+    border: red solid solid 1px;
     border-radius: 16px;
     padding: 24px;
     margin: 32px;
@@ -473,11 +473,55 @@ body[class*="saison"] .bundesliga {
     -webkit-backdrop-filter: blur(4.5px);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
-   
+
+.player-name-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 48px;
+    font-family: "Arial Black";
+}
+
+.country-flag {
+    display: block;
+}
+
+.germany {
+    font-family: sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    /* Hintergrundbild definieren */
+    background-image: url('assets/Deutschland.png');
+    /* Bild an Text anpassen */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Textfarbe transparent machen */
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* Optional: Bildgröße anpassen */
+    background-size: 108px;
+}
+
+
+.defender-text {
+    /*border: red solid solid 1px;*/
+    border-radius: 16px;
+    padding: 24px;
+    margin: 32px;
+    margin-top: 64px;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 
 .daten-spieler {
     display: flex;
     align-items: center;
+    font-weight: bold;
 }
 
 
