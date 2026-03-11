@@ -736,6 +736,30 @@ body {
 }
 
 
+/* Kader Format für PC */
+@media (min-width: 1250px) {
+    .kader {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 32px;
+        align-items: start;
+    }
+
+    .kader > .position-1,
+    .kader > .position-2 {
+        grid-column: 1 / -1;
+    }
+
+    .kader > .player {
+        margin: 0 32px 32px 32px;
+    }
+
+    .kader > .player:nth-of-type(even) {
+        justify-self: start;
+    }
+}
+
+
 /* Handy Format */
 @media(max-width: 600px) {
 
