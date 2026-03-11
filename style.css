@@ -447,7 +447,7 @@ body[class*="saison"] .bundesliga {
     align-items: flex-start;
 }
 
-.goalkeeper-text {
+.position-1 {
     /*border: red solid solid 1px;*/
     border-radius: 16px;
     padding: 24px;
@@ -462,7 +462,6 @@ body[class*="saison"] .bundesliga {
 }
 
 .player {
-    border: red solid solid 1px;
     border-radius: 16px;
     padding: 24px;
     margin: 32px;
@@ -480,6 +479,10 @@ body[class*="saison"] .bundesliga {
     gap: 12px;
     font-size: 48px;
     font-family: "Arial Black";
+}
+
+.player-picture {
+    width: 256px
 }
 
 .country-flag {
@@ -503,7 +506,7 @@ body[class*="saison"] .bundesliga {
 }
 
 
-.defender-text {
+.position-2 {
     /*border: red solid solid 1px;*/
     border-radius: 16px;
     padding: 24px;
@@ -601,7 +604,7 @@ body {
     flex-direction: column;
     margin: 48px;
     padding: 32px;
-    gap: 32px;
+    gap: 16px;
     margin-top: 224px;
     background: rgb(29, 144, 83);
     border-radius: 16px;
@@ -735,6 +738,12 @@ body {
 
 /* Handy Format */
 @media(max-width: 600px) {
+
+    * {
+        padding-left: 0px;
+        margin-left: 4px;
+    }
+
     .container-countdown {
         flex-direction: column;
         display: flex;
@@ -754,7 +763,7 @@ body {
 
     .time {
         display: flex;
-        padding: 8px;
+        padding: 80px;
         margin: 24px;
     }
 
@@ -781,9 +790,9 @@ body {
     }
 
     .menü-headline {
-        font-size: 28px;
+        font-size: 24px;
         text-align: center;
-        margin: 0 0 8px 0;
+        margin: 12px 0 8px 0;
     }
 
     .menü {
@@ -791,12 +800,13 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         margin: 0;
-        gap: 8px;
+        gap: 4px;
     }
 
     .menü-link {
-        font-size: 12px;
+        font-size: 10px;
         margin: 0;
+        padding: 12;
     }
 
     body[class*="saison"] .bundesliga {
@@ -809,6 +819,8 @@ body {
         flex-direction: column;
         align-items: flex-start;
         width: 436px;
+        padding-left: 0px;
+        margin-left: 0px;
     }
 
     .bundesliga-archiv {
@@ -845,6 +857,8 @@ body {
         background-size: var(--heimspiel-bg-size);
         background-repeat: var(--heimspiel-bg-repeat);
         box-shadow: var(--heimspiel-shadow);
+        padding-left: 16px;
+        margin-left: 4px;
 
     }
 
@@ -858,6 +872,20 @@ body {
         flex-direction: column;
         background: var(--auswaertsspiel-bg);
         box-shadow: var(--auswaertsspiel-shadow);
+        padding-left: 16px;
+        margin-left: 4px;
+    }
+
+    .hin-rueck-runde {
+        padding-left: 16px;
+        margin-left: 4px;
+        font-weight: bold;
+    }
+
+    .month {
+        padding-left: 16px;
+        margin-left: 4px;
+        font-weight: bold;
     }
 
     .torschuetze-liste {
@@ -903,23 +931,35 @@ body {
 
     .torschuetze-heim ul li,
     .torschuetze-auswaerts ul li {
-        font-size: 10px !important;
+        font-size: 8px !important;
         line-height: 1.25;
     }
 
     .torschuetze-heim-heimspiel ul li,
     .torschuetze-auswaerts-heimspiel ul li {
-        font-size: 10px !important;
+        font-size: 8px !important;
         line-height: 1.25;
     }
 
     .daten {
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    .weserstadion-titel {
+        font-size: 16px;
+    }
+
+    .bundesliga-titel {
+        font-size: 16px;
     }
 
     .ergebnis {
-        font-size: 12px;
+        font-size: 16px;
         margin: 4px;
+    }
+
+    .spieltag-schriftart {
+        font-size: 24px;
     }
 
     .saison-auswahl {
@@ -941,6 +981,39 @@ body {
     .saison-link-title {
         font-size: 28px;
     }
+
+    .contact-form {
+        padding-top: 16px;
+        margin-left: 8px;
+        gap: 4px;
+    }
+
+
+    .player{
+        margin-left: 4px;
+        margin-right: auto;
+    }
+
+    .player-name-row {
+        font-size: 32px;
+    }
+
+    .player-picture {
+        width: 128px
+    }
+
+    .daten-spieler {
+        font-size: 24px;
+    }
+
+    .position-1 {
+        margin-left: 4px;
+    }
+
+    .position-2 {
+        margin-left: 4px;
+    }
+
 }
 
 
